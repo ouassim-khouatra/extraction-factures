@@ -30,6 +30,10 @@ BAREME_TVA = (
 # Ecart maximal pour aligner un taux calcule sur le bareme (RD-08), en points.
 ECART_ALIGNEMENT_TAUX = Decimal("0.5")
 
+# Codes devise acceptes sans avertissement (RV-12, EF-19).
+# La normalisation "DH"/"Dhs" -> "MAD" arrivera en semaine 3 (EF-18).
+DEVISES_CONNUES = {"MAD", "EUR", "USD", "GBP", "CHF", "JPY"}
+
 
 def arrondi(montant: Decimal) -> Decimal:
     """Arrondi commercial a deux decimales — LE seul arrondi du projet."""
@@ -53,3 +57,23 @@ def present(*champs: Optional[Champ[Any]]) -> bool:
     les champs qu'elle met en jeu. L'absence n'est JAMAIS une erreur.
     """
     return all(c is not None and c.valeur is not None for c in champs)
+
+
+def luhn_valide(numero: str) -> bool:
+    """Cle de Luhn (utilisee par RV-10 pour le SIRET).
+
+    Principe : en partant de la droite, on double un chiffre sur deux
+    (en retranchant 9 si le double depasse 9) ; la somme totale doit
+    etre un multiple de 10.
+    """
+    if not numero.isdigit():
+        return False
+    total = 0
+    for i, caractere in enumerate(reversed(numero)):
+        chiffre = int(caractere)
+        if i % 2 == 1:
+            chiffre *= 2
+            if chiffre > 9:
+                chiffre -= 9
+        total += chiffre
+    return total % 10 == 0

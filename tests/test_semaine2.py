@@ -17,6 +17,7 @@ from schema.modeles import (
     BandeTVA,
     Champ,
     Facture,
+    Fournisseur,
     LigneFacture,
     Source,
     TypeDocument,
@@ -208,7 +209,7 @@ def test_rd02_ht_et_taux_derivent_tva_puis_ttc():
     assert f.total_ttc is not None and f.total_ttc.valeur == D("120.00")
     assert f.total_ttc.regle == "RD-05"
     assert valider(f) == []
-    
+
 
 # ---------------------------------------------------------------------------
 # RD-06 : le net a payer
@@ -216,19 +217,17 @@ def test_rd02_ht_et_taux_derivent_tva_puis_ttc():
 
 
 def test_rd06_ttc_et_acompte_derivent_net_a_payer():
-    # Facture inventee : TTC = 120, le client a deja verse 50 d'acompte
     f = Facture(
-        total_ttc=Champ.lu(D("120")),
-        acompte=Champ.lu(D("50")),
+        total_ttc=Champ.lu(D("120.00")),
+        acompte=Champ.lu(D("50.00")),
     )
     appliquees = appliquer_derivations(f)
 
     assert "rd_06" in appliquees
-    # Combien reste-t-il a payer ? C'est TOI qui ecris le montant attendu :
-    assert f.net_a_payer is not None and f.net_a_payer.valeur == D("70")
+    assert f.net_a_payer is not None and f.net_a_payer.valeur == D("70.00")
     assert f.net_a_payer.source is Source.DERIVE
     assert f.net_a_payer.regle == "RD-06"
-    
+
 
 # ---------------------------------------------------------------------------
 # RD-07 : montant HT de chaque ligne
@@ -253,7 +252,189 @@ def test_rd07_lignes_qte_pu_derivent_montant_ht():
 
     assert "rd_07" in appliquees
     assert f.lignes[0].montant_ht is not None
-    assert f.lignes[0].montant_ht.valeur == D("120")
+    assert f.lignes[0].montant_ht.valeur == D("120.00")
     assert f.lignes[0].montant_ht.regle == "RD-07"
     assert f.lignes[1].montant_ht is not None
-    assert f.lignes[1].montant_ht.valeur == D("90")
+    assert f.lignes[1].montant_ht.valeur == D("90.00")
+
+
+# ---------------------------------------------------------------------------
+# RD-03 / RD-08 : retrouver le taux a partir des totaux
+# ---------------------------------------------------------------------------
+
+
+def test_rd03_ht_et_tva_derivent_le_taux_dans_une_bande():
+    f = Facture(
+        total_ht=Champ.lu(D("100.00")),
+        total_tva=Champ.lu(D("20.00")),
+    )
+    appliquees = appliquer_derivations(f)
+
+    assert "rd_03" in appliquees
+    assert len(f.bandes_tva) == 1
+    bande = f.bandes_tva[0]
+    assert bande.taux is not None and bande.taux.valeur == D("20")
+    assert bande.taux.source is Source.DERIVE
+    assert bande.taux.regle == "RD-03"
+    # RD-05 a enchaine : le TTC est la aussi
+    assert f.total_ttc is not None and f.total_ttc.valeur == D("120.00")
+    assert valider(f) == []
+
+
+def test_rd08_alignement_sur_le_bareme():
+    from regles.derivation import rd_08_aligner_taux
+
+    assert rd_08_aligner_taux(D("19.7")) == (D("20"), True)   # aligne
+    assert rd_08_aligner_taux(D("10.2")) == (D("10"), True)   # aligne
+    assert rd_08_aligner_taux(D("15")) == (D("15"), False)    # conserve
+
+
+# ---------------------------------------------------------------------------
+# Cas 4.1 : facture multi-taux, chaine complete lignes -> bandes -> totaux
+# ---------------------------------------------------------------------------
+
+
+def test_multi_taux_chaine_complete_lignes_vers_ttc():
+    f = Facture(
+        lignes=[
+            LigneFacture(
+                quantite=Champ.lu(D("2")),
+                prix_unitaire_ht=Champ.lu(D("50.00")),
+                taux_tva=Champ.lu(D("20")),
+            ),
+            LigneFacture(
+                quantite=Champ.lu(D("4")),
+                prix_unitaire_ht=Champ.lu(D("25.00")),
+                taux_tva=Champ.lu(D("10")),
+            ),
+        ]
+    )
+    appliquees = appliquer_derivations(f)
+
+    # RD-07 remplit les lignes, RD-04 agrege, RD-05 conclut : le chainage.
+    assert "rd_07" in appliquees
+    assert "rd_04" in appliquees
+    assert "rd_05" in appliquees
+
+    assert f.total_ht is not None and f.total_ht.valeur == D("200.00")
+    assert len(f.bandes_tva) == 2  # une bande par taux
+    assert f.total_tva is not None and f.total_tva.valeur == D("30.00")
+    assert f.total_ttc is not None and f.total_ttc.valeur == D("230.00")
+    # Une facture entierement coherente : zero anomalie.
+    assert valider(f) == []
+
+
+# ---------------------------------------------------------------------------
+# Cas 4.1 : remise globale en pied de facture
+# ---------------------------------------------------------------------------
+
+
+def test_remise_globale_prise_en_compte_par_rv02():
+    f = Facture(
+        lignes=[
+            LigneFacture(montant_ht=Champ.lu(D("100.00"))),
+            LigneFacture(montant_ht=Champ.lu(D("100.00"))),
+        ],
+        total_remise=Champ.lu(D("20.00")),
+        total_ht=Champ.lu(D("180.00")),  # 200 - 20 : coherent
+    )
+    assert valider(f) == []
+
+
+# ---------------------------------------------------------------------------
+# Fautes injectees (section 8.3 du CDC) : le filet doit TOUT attraper
+# ---------------------------------------------------------------------------
+
+
+def test_faute_injectee_ligne_qui_ne_somme_pas():
+    f = Facture(
+        lignes=[
+            LigneFacture(
+                quantite=Champ.lu(D("3")),
+                prix_unitaire_ht=Champ.lu(D("40.00")),
+                montant_ht=Champ.lu(D("130.00")),  # faux : 3 x 40 = 120
+            ),
+        ]
+    )
+    anomalies = valider(f)
+
+    assert len(anomalies) == 1
+    assert anomalies[0].regle == "RV-01"
+    assert a_des_erreurs(anomalies)
+
+
+def test_faute_injectee_net_a_payer_incoherent():
+    """Le scenario du quiz : net LU incoherent -> rd_06 ne touche a rien,
+    et c'est RV-07 qui detecte l'ecart."""
+    f = Facture(
+        total_ttc=Champ.lu(D("120.00")),
+        acompte=Champ.lu(D("50.00")),
+        net_a_payer=Champ.lu(D("65.00")),  # faux : 120 - 50 = 70
+    )
+    appliquees = appliquer_derivations(f)
+    assert "rd_06" not in appliquees  # jamais ecraser un champ lu
+    assert f.net_a_payer is not None and f.net_a_payer.valeur == D("65.00")
+
+    anomalies = valider(f)
+    assert [a.regle for a in anomalies] == ["RV-07"]
+    assert a_des_erreurs(anomalies)
+
+
+def test_faute_injectee_somme_ttc_des_lignes(caplog=None):
+    """BL valorise en TTC seulement (pas de total HT) : les lignes se
+    reconcilient contre le TTC (RV-03)."""
+    f = Facture(
+        total_ttc=Champ.lu(D("210.00")),
+        lignes=[
+            LigneFacture(montant_ttc=Champ.lu(D("100.00"))),
+            LigneFacture(montant_ttc=Champ.lu(D("100.00"))),  # somme 200 != 210
+        ],
+    )
+    anomalies = valider(f)
+    assert [a.regle for a in anomalies] == ["RV-03"]
+    assert a_des_erreurs(anomalies)
+
+
+def test_faute_injectee_ice_a_14_chiffres():
+    f = Facture(
+        fournisseur=Fournisseur(ice=Champ.lu("12345678901234")),  # 14 chiffres
+    )
+    anomalies = valider(f)
+    assert [a.regle for a in anomalies] == ["RV-09"]
+    assert a_des_erreurs(anomalies)
+
+
+def test_ice_valide_a_15_chiffres_passe():
+    f = Facture(
+        fournisseur=Fournisseur(ice=Champ.lu("001512572000078")),
+    )
+    assert valider(f) == []
+
+
+# ---------------------------------------------------------------------------
+# Les formats avertissent sans bloquer
+# ---------------------------------------------------------------------------
+
+
+def test_rv10_siret_invalide_avertit_sans_bloquer():
+    f = Facture(
+        fournisseur=Fournisseur(siret=Champ.lu("73282932000075")),  # Luhn KO
+    )
+    anomalies = valider(f)
+    assert [a.regle for a in anomalies] == ["RV-10"]
+    assert anomalies[0].severite is Severite.AVERTISSEMENT
+    assert not a_des_erreurs(anomalies)
+
+
+def test_rv10_siret_valide_passe():
+    f = Facture(
+        fournisseur=Fournisseur(siret=Champ.lu("73282932000074")),  # Luhn OK
+    )
+    assert valider(f) == []
+
+
+def test_rv12_devise_inconnue_avertit():
+    f = Facture(devise=Champ.lu("XYZ"))
+    anomalies = valider(f)
+    assert [a.regle for a in anomalies] == ["RV-12"]
+    assert anomalies[0].severite is Severite.AVERTISSEMENT
