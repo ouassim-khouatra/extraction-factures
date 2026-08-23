@@ -207,3 +207,23 @@ def test_rd02_ht_et_taux_derivent_tva_puis_ttc():
     assert f.total_ttc is not None and f.total_ttc.valeur == D("120.00")
     assert f.total_ttc.regle == "RD-05"
     assert valider(f) == []
+    
+
+# ---------------------------------------------------------------------------
+# RD-06 : le net a payer
+# ---------------------------------------------------------------------------
+
+
+def test_rd06_ttc_et_acompte_derivent_net_a_payer():
+    # Facture inventee : TTC = 120, le client a deja verse 50 d'acompte
+    f = Facture(
+        total_ttc=Champ.lu(D("120")),
+        acompte=Champ.lu(D("50")),
+    )
+    appliquees = appliquer_derivations(f)
+
+    assert "rd_06" in appliquees
+    # Combien reste-t-il a payer ? C'est TOI qui ecris le montant attendu :
+    assert f.net_a_payer is not None and f.net_a_payer.valeur == D("70")
+    assert f.net_a_payer.source is Source.DERIVE
+    assert f.net_a_payer.regle == "RD-06"

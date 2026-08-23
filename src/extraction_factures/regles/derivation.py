@@ -124,6 +124,25 @@ def rd_02(f: Facture) -> bool:
     tva = arrondi(f.total_ht.valeur * taux / Decimal("100"))
     f.total_tva = Champ.derive(tva, "RD-02")
     return True
+def rd_06(f: Facture) -> bool:
+    """TTC et acompte connus, net a payer absent -> net = TTC - acompte - escompte."""
+    # 1. La cible ne doit pas avoir ete lue sur le document.
+    #    Ici, la cible c'est le net a payer.
+    if present(f.net_a_payer):
+        return False
+    # 2. Les deux ingredients obligatoires doivent etre presents.
+    if not present(f.total_ttc, f.acompte):
+        return False
+
+    # 3. Le calcul : le TTC moins l'avance deja versee.
+    net = f.total_ttc.valeur - f.acompte.valeur
+    # 4. Terme optionnel (meme motif que dans rd_05) :
+    #    l'escompte ne se soustrait que s'il est present.
+    if f.escompte is not None and present(f.escompte):
+        net -= f.escompte.valeur
+    # 5. On enregistre le resultat, marque comme derive par quelle regle ?
+    f.net_a_payer = Champ.derive(arrondi(net), "RD-06")
+    return True
 # ---------------------------------------------------------------------------
 # TODO stagiaire — a implementer semaine 2, test d'abord
 # ---------------------------------------------------------------------------
@@ -144,6 +163,7 @@ REGLES_DERIVATION: list[Callable[[Facture], bool]] = [
        rd_01,
     rd_05,
     rd_02,
+    rd_06,
 
     # rd_02, rd_03, rd_04, rd_06, rd_07 : a ajouter au fur et a mesure
 ]
