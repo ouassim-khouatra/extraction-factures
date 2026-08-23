@@ -17,6 +17,7 @@ from schema.modeles import (
     BandeTVA,
     Champ,
     Facture,
+    LigneFacture,
     Source,
     TypeDocument,
 )
@@ -227,3 +228,32 @@ def test_rd06_ttc_et_acompte_derivent_net_a_payer():
     assert f.net_a_payer is not None and f.net_a_payer.valeur == D("70")
     assert f.net_a_payer.source is Source.DERIVE
     assert f.net_a_payer.regle == "RD-06"
+    
+
+# ---------------------------------------------------------------------------
+# RD-07 : montant HT de chaque ligne
+# ---------------------------------------------------------------------------
+
+
+def test_rd07_lignes_qte_pu_derivent_montant_ht():
+    f = Facture(
+        lignes=[
+            LigneFacture(
+                quantite=Champ.lu(D("3")),
+                prix_unitaire_ht=Champ.lu(D("40.00")),
+            ),
+            LigneFacture(
+                quantite=Champ.lu(D("2")),
+                prix_unitaire_ht=Champ.lu(D("50.00")),
+                montant_remise=Champ.lu(D("10.00")),
+            ),
+        ]
+    )
+    appliquees = appliquer_derivations(f)
+
+    assert "rd_07" in appliquees
+    assert f.lignes[0].montant_ht is not None
+    assert f.lignes[0].montant_ht.valeur == D("120")
+    assert f.lignes[0].montant_ht.regle == "RD-07"
+    assert f.lignes[1].montant_ht is not None
+    assert f.lignes[1].montant_ht.valeur == D("90")

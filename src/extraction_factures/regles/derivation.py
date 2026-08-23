@@ -143,6 +143,25 @@ def rd_06(f: Facture) -> bool:
     # 5. On enregistre le resultat, marque comme derive par quelle regle ?
     f.net_a_payer = Champ.derive(arrondi(net), "RD-06")
     return True
+def rd_07(f: Facture) -> bool:
+    """Qte et PU connus au niveau ligne, montant HT absent -> qte x PU - remise."""
+    changement = False
+    for ligne in f.lignes:
+        # 1. Le montant est deja imprime sur cette ligne ? On n'y touche pas.
+        if present(ligne.montant_ht):
+            continue
+        # 2. Il manque la quantite ou le prix ? On ne peut rien calculer, on saute.
+        if not present(ligne.quantite, ligne.prix_unitaire_ht):
+            continue
+        # 3. Le calcul de base.
+        montant = ligne.quantite.valeur * ligne.prix_unitaire_ht.valeur
+        # 4. La remise de ligne, seulement si elle existe.
+        if ligne.montant_remise is not None and present(ligne.montant_remise):
+            montant -= ligne.montant_remise.valeur
+        # 5. On range le resultat avec son etiquette.
+        ligne.montant_ht = Champ.derive(arrondi(montant), "RD-07")
+        changement = True
+    return changement
 # ---------------------------------------------------------------------------
 # TODO stagiaire — a implementer semaine 2, test d'abord
 # ---------------------------------------------------------------------------
@@ -160,10 +179,11 @@ def rd_06(f: Facture) -> bool:
 # (ex. RD-04 produit des totaux que RD-05 peut ensuite utiliser), d'ou
 # la boucle en point fixe dans appliquer_derivations.
 REGLES_DERIVATION: list[Callable[[Facture], bool]] = [
-       rd_01,
+    rd_01,
     rd_05,
     rd_02,
     rd_06,
+    rd_07,
 
     # rd_02, rd_03, rd_04, rd_06, rd_07 : a ajouter au fur et a mesure
 ]
