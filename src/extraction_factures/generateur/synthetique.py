@@ -229,7 +229,12 @@ def injecter_faute(f: Facture, rng: random.Random, faute: Optional[str] = None) 
     possibles = list(FAUTES)
     if not f.lignes:
         possibles.remove("ligne_ne_somme_pas")
-    if f.total_ttc is None:
+        # Un TTC faux n'est arithmetiquement detectable que s'il existe une
+    # redondance (HT et TVA presents, controle RV-06). Sur une facture
+    # "TTC seul", aucune regle ne peut le voir : c'est precisement la
+    # limite structurelle de la lecture unique que corrige la double
+    # lecture (CDC, justification de l'exigence EF-13).
+    if f.total_ttc is None or f.total_ht is None or f.total_tva is None:
         possibles.remove("total_ttc_faux")
     if f.net_a_payer is None:
         possibles.remove("net_a_payer_faux")

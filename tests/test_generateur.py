@@ -31,7 +31,7 @@ def test_chaque_type_de_faute_est_detecte():
     rng = random.Random(2)
     for faute in FAUTES:
         detectee = False
-        for i in range(30):  # on cherche une facture compatible avec la faute
+        for i in range(200):  # on cherche une facture compatible avec la faute
             f, _ = facture_coherente(rng, 100 + i)
             appliquee = injecter_faute(f, rng, faute=faute)
             if appliquee != faute:
