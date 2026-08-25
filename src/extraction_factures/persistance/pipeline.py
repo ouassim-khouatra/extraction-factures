@@ -51,7 +51,10 @@ def _sha256(chemin: Path) -> str:
 def _texte(champ: Optional[Champ]) -> Optional[str]:
     if champ is None or champ.valeur is None:
         return None
-    return str(champ.valeur)
+    valeur = champ.valeur
+    if hasattr(valeur, "value"):  # enums (ex. TypeDocument) -> "avoir"
+        return str(valeur.value)
+    return str(valeur)
 
 
 def _journal(session: Session, evenement: str, sha: Optional[str], detail: str = "") -> None:

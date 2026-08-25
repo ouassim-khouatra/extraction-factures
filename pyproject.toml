@@ -10,6 +10,7 @@ dependencies = [
     "pymupdf>=1.28.2",
     "reportlab>=5.0.1",
     "sqlalchemy>=2.0.52",
+    "streamlit>=1.62.0",
 ]
 
 [project.scripts]
