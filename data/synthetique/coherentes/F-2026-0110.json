@@ -1,0 +1,182 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0110",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-01-11",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-02-25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "STE IMPRIMERIE DU SUD",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "8 bd Mohammed V",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Marrakech",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "711309664537321",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "19150490",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "SOCIETE DEMO SARL",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "1845.00",
+      "valeur_brute": "1 845,00",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "258.30",
+      "valeur_brute": "258,30",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "2103.30",
+      "valeur_brute": "2 103,30",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Stylos bille (boite de 50)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "8",
+          "valeur_brute": "8",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "116.5",
+          "valeur_brute": "116,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "932.00",
+          "valeur_brute": "932,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "14",
+          "valeur_brute": "14%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Stylos bille (boite de 50)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "11",
+          "valeur_brute": "11",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "83",
+          "valeur_brute": "83,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "913.00",
+          "valeur_brute": "913,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "14",
+          "valeur_brute": "14%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "14",
+          "valeur_brute": "14%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "1845.00",
+          "valeur_brute": "1 845,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "258.30",
+          "valeur_brute": "258,30",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

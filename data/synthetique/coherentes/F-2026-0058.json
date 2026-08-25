@@ -1,0 +1,256 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0058",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-03-05",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-04-19",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "ATLAS FOURNITURES SARL",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "12 rue des Orangers",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Casablanca",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "322279370660134",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "77447155",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "OFFICE MODERNE SA",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "5806.50",
+      "valeur_brute": "5 806,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "1161.30",
+      "valeur_brute": "1 161,30",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "6967.80",
+      "valeur_brute": "6 967,80",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Stylos bille (boite de 50)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "20",
+          "valeur_brute": "20",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "74",
+          "valeur_brute": "74,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "1480.00",
+          "valeur_brute": "1 480,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Classeur a levier dos 75mm",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "16",
+          "valeur_brute": "16",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "16.75",
+          "valeur_brute": "16,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "268.00",
+          "valeur_brute": "268,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Stylos bille (boite de 50)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "14",
+          "valeur_brute": "14",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "104.75",
+          "valeur_brute": "104,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "1466.50",
+          "valeur_brute": "1 466,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 4,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "8",
+          "valeur_brute": "8",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "324",
+          "valeur_brute": "324,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2592.00",
+          "valeur_brute": "2 592,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "5806.50",
+          "valeur_brute": "5 806,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "1161.30",
+          "valeur_brute": "1 161,30",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

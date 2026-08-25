@@ -1,0 +1,256 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0096",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-10",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-12",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "STE IMPRIMERIE DU SUD",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "8 bd Mohammed V",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Marrakech",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "315986624077096",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "90683906",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "SOCIETE DEMO SARL",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "15527.00",
+      "valeur_brute": "15 527,00",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "1552.70",
+      "valeur_brute": "1 552,70",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "17079.70",
+      "valeur_brute": "17 079,70",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Enveloppes C5 (boite de 500)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "13",
+          "valeur_brute": "13",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "52.25",
+          "valeur_brute": "52,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "679.25",
+          "valeur_brute": "679,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "10",
+          "valeur_brute": "10%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Transport et manutention",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "9",
+          "valeur_brute": "9",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "67.75",
+          "valeur_brute": "67,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "609.75",
+          "valeur_brute": "609,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "10",
+          "valeur_brute": "10%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Toner laser compatible",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "17",
+          "valeur_brute": "17",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "819.25",
+          "valeur_brute": "819,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "13927.25",
+          "valeur_brute": "13 927,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "10",
+          "valeur_brute": "10%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 4,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "1",
+          "valeur_brute": "1",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "310.75",
+          "valeur_brute": "310,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "310.75",
+          "valeur_brute": "310,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "10",
+          "valeur_brute": "10%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "10",
+          "valeur_brute": "10%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "15527.00",
+          "valeur_brute": "15 527,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "1552.70",
+          "valeur_brute": "1 552,70",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

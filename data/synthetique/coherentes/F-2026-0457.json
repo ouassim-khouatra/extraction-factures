@@ -1,0 +1,76 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0457",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-14",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-31",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "ATLAS FOURNITURES SARL",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "12 rue des Orangers",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Casablanca",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "204683599745908",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "95773512",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "9750.00",
+      "valeur_brute": "9 750,00",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "7",
+          "valeur_brute": "7%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

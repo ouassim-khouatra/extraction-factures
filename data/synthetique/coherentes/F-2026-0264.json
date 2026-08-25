@@ -1,0 +1,224 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0264",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-01-06",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-07",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "COMPTOIR DE L'EMBALLAGE",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "3 rue Oued Souss",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Sale",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "292909184550455",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "62378052",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "13667.25",
+      "valeur_brute": "13 667,25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "2733.45",
+      "valeur_brute": "2 733,45",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "16400.70",
+      "valeur_brute": "16 400,70",
+      "source": "lu",
+      "lectures": {}
+    },
+    "acompte": {
+      "valeur": "3444.15",
+      "valeur_brute": "3 444,15",
+      "source": "lu",
+      "lectures": {}
+    },
+    "net_a_payer": {
+      "valeur": "12956.55",
+      "valeur_brute": "12 956,55",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "19",
+          "valeur_brute": "19",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "328.25",
+          "valeur_brute": "328,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "6236.75",
+          "valeur_brute": "6 236,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Transport et manutention",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "17",
+          "valeur_brute": "17",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "130.5",
+          "valeur_brute": "130,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2218.50",
+          "valeur_brute": "2 218,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Toner laser compatible",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "8",
+          "valeur_brute": "8",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "651.5",
+          "valeur_brute": "651,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "5212.00",
+          "valeur_brute": "5 212,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "13667.25",
+          "valeur_brute": "13 667,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "2733.45",
+          "valeur_brute": "2 733,45",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

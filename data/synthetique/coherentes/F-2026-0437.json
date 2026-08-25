@@ -1,0 +1,286 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0437",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-01-17",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-18",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "MAROC NEGOCE SA",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "45 avenue Hassan II",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Rabat",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "505050258048176",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "21996795",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "10206.50",
+      "valeur_brute": "10 206,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "2041.30",
+      "valeur_brute": "2 041,30",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "12247.80",
+      "valeur_brute": "12 247,80",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "11",
+          "valeur_brute": "11",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "297.75",
+          "valeur_brute": "297,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "3275.25",
+          "valeur_brute": "3 275,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Toner laser compatible",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "11",
+          "valeur_brute": "11",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "515.25",
+          "valeur_brute": "515,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "5667.75",
+          "valeur_brute": "5 667,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Papier A4 80g (ramette)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "1",
+          "valeur_brute": "1",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "59.75",
+          "valeur_brute": "59,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "59.75",
+          "valeur_brute": "59,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 4,
+        "designation": {
+          "valeur": "Papier A4 80g (ramette)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "3",
+          "valeur_brute": "3",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "45.25",
+          "valeur_brute": "45,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "135.75",
+          "valeur_brute": "135,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 5,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "3",
+          "valeur_brute": "3",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "356",
+          "valeur_brute": "356,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "1068.00",
+          "valeur_brute": "1 068,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "10206.50",
+          "valeur_brute": "10 206,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "2041.30",
+          "valeur_brute": "2 041,30",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

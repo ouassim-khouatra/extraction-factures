@@ -1,0 +1,243 @@
+{
+  "faute": null,
+  "gabarit": "remise",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0375",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-03-18",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-05-02",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "ATLAS FOURNITURES SARL",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "12 rue des Orangers",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Casablanca",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "179762282738208",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "36949332",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "5732.46",
+      "valeur_brute": "5 732,46",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_remise": {
+      "valeur": "177.29",
+      "valeur_brute": "177,29",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "1146.49",
+      "valeur_brute": "1 146,49",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "6878.95",
+      "valeur_brute": "6 878,95",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Transport et manutention",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "4",
+          "valeur_brute": "4",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "54.25",
+          "valeur_brute": "54,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "217.00",
+          "valeur_brute": "217,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Papier A4 80g (ramette)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "13",
+          "valeur_brute": "13",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "40.75",
+          "valeur_brute": "40,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "529.75",
+          "valeur_brute": "529,75",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "8",
+          "valeur_brute": "8",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "291.5",
+          "valeur_brute": "291,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2332.00",
+          "valeur_brute": "2 332,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 4,
+        "designation": {
+          "valeur": "Transport et manutention",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "5",
+          "valeur_brute": "5",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "96.5",
+          "valeur_brute": "96,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "482.50",
+          "valeur_brute": "482,50",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 5,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "7",
+          "valeur_brute": "7",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "335.5",
+          "valeur_brute": "335,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2348.50",
+          "valeur_brute": "2 348,50",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [],
+    "extra": {
+      "taux_affiche": "20"
+    }
+  }
+}

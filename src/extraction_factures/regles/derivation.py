@@ -209,10 +209,12 @@ def rd_04(f: Facture) -> bool:
 
 
 def rd_05(f: Facture) -> bool:
-    """HT et TVA connus, TTC absent -> TTC = HT + TVA + port + timbre - remise.
+    """HT et TVA connus, TTC absent -> TTC = HT + TVA + port + timbre.
 
-    Illustre le motif "termes presents seulement" : port, timbre et remise
+    Illustre le motif "termes presents seulement" : port et timbre
     n'entrent dans la formule que s'ils existent.
+    Convention remise (a confirmer avec le comptable) : la remise globale
+    s'impute sur le total HT (RD-04 / RV-02) ; on ne la re-deduit pas ici.
     """
     if present(f.total_ttc):
         return False
@@ -228,10 +230,6 @@ def rd_05(f: Facture) -> bool:
     if f.timbre_fiscal is not None and present(f.timbre_fiscal):
         assert f.timbre_fiscal.valeur is not None
         ttc += f.timbre_fiscal.valeur
-    if f.total_remise is not None and present(f.total_remise):
-        assert f.total_remise.valeur is not None
-        ttc -= f.total_remise.valeur
-
     f.total_ttc = Champ.derive(arrondi(ttc), "RD-05")
     return True
 

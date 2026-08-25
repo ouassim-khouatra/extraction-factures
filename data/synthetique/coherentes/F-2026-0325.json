@@ -1,0 +1,83 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0325",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-03-17",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-05-16",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "MAROC NEGOCE SA",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "45 avenue Hassan II",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Rabat",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "804109316530413",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "85048659",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "ETABLISSEMENTS KARAM",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "3256.00",
+      "valeur_brute": "3 256,00",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

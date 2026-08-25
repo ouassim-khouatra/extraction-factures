@@ -1,0 +1,76 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0081",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-01",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-04-02",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "MAROC NEGOCE SA",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "45 avenue Hassan II",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Rabat",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "104358237871834",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "80310522",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "8228.50",
+      "valeur_brute": "8 228,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

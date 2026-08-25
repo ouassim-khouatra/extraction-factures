@@ -1,0 +1,256 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0402",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-03",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-05",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "COMPTOIR DE L'EMBALLAGE",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "3 rue Oued Souss",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Sale",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "779472903782401",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "13789737",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "ETABLISSEMENTS KARAM",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "12322.25",
+      "valeur_brute": "12 322,25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "2464.45",
+      "valeur_brute": "2 464,45",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "14786.70",
+      "valeur_brute": "14 786,70",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Enveloppes C5 (boite de 500)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "18",
+          "valeur_brute": "18",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "45.75",
+          "valeur_brute": "45,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "823.50",
+          "valeur_brute": "823,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Toner laser compatible",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "19",
+          "valeur_brute": "19",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "560",
+          "valeur_brute": "560,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "10640.00",
+          "valeur_brute": "10 640,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Classeur a levier dos 75mm",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "15",
+          "valeur_brute": "15",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "21.25",
+          "valeur_brute": "21,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "318.75",
+          "valeur_brute": "318,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 4,
+        "designation": {
+          "valeur": "Papier A4 80g (ramette)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "10",
+          "valeur_brute": "10",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "54",
+          "valeur_brute": "54,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "540.00",
+          "valeur_brute": "540,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "12322.25",
+          "valeur_brute": "12 322,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "2464.45",
+          "valeur_brute": "2 464,45",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

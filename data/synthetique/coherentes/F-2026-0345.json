@@ -1,0 +1,243 @@
+{
+  "faute": null,
+  "gabarit": "remise",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0345",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-11",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-13",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "ATLAS FOURNITURES SARL",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "12 rue des Orangers",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Casablanca",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "322776349988752",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "37183114",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "22731.36",
+      "valeur_brute": "22 731,36",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_remise": {
+      "valeur": "1196.39",
+      "valeur_brute": "1 196,39",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "4546.27",
+      "valeur_brute": "4 546,27",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "27277.63",
+      "valeur_brute": "27 277,63",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "11",
+          "valeur_brute": "11",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "309.75",
+          "valeur_brute": "309,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "3407.25",
+          "valeur_brute": "3 407,25",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Toner laser compatible",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "18",
+          "valeur_brute": "18",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "773.75",
+          "valeur_brute": "773,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "13927.50",
+          "valeur_brute": "13 927,50",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Papier A4 80g (ramette)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "15",
+          "valeur_brute": "15",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "53",
+          "valeur_brute": "53,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "795.00",
+          "valeur_brute": "795,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 4,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "9",
+          "valeur_brute": "9",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "354",
+          "valeur_brute": "354,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "3186.00",
+          "valeur_brute": "3 186,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 5,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "8",
+          "valeur_brute": "8",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "326.5",
+          "valeur_brute": "326,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2612.00",
+          "valeur_brute": "2 612,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [],
+    "extra": {
+      "taux_affiche": "20"
+    }
+  }
+}

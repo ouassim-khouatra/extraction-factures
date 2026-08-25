@@ -1,0 +1,76 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0120",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-03-20",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-04-19",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "TECHNO DISTRIB SARL AU",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "Zone industrielle Gzenaya",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Tanger",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "195857069509644",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "15830187",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "3859.50",
+      "valeur_brute": "3 859,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "14",
+          "valeur_brute": "14%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

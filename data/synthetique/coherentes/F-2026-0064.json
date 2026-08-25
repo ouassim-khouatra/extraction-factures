@@ -1,0 +1,219 @@
+{
+  "faute": null,
+  "gabarit": "detaillee",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0064",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-23",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "MAROC NEGOCE SA",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "45 avenue Hassan II",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Rabat",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "053666440505290",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "67790557",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "SOCIETE DEMO SARL",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "6561.25",
+      "valeur_brute": "6 561,25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "1312.25",
+      "valeur_brute": "1 312,25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "7873.50",
+      "valeur_brute": "7 873,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "7",
+          "valeur_brute": "7",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "308.5",
+          "valeur_brute": "308,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2159.50",
+          "valeur_brute": "2 159,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Stylos bille (boite de 50)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "9",
+          "valeur_brute": "9",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "110.75",
+          "valeur_brute": "110,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "996.75",
+          "valeur_brute": "996,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "12",
+          "valeur_brute": "12",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "283.75",
+          "valeur_brute": "283,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "3405.00",
+          "valeur_brute": "3 405,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "taux_tva": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        },
+        "base_ht": {
+          "valeur": "6561.25",
+          "valeur_brute": "6 561,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_tva": {
+          "valeur": "1312.25",
+          "valeur_brute": "1 312,25",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

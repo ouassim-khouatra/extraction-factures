@@ -1,0 +1,150 @@
+{
+  "faute": null,
+  "gabarit": "remise",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0122",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-08-09",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-09-23",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "COMPTOIR DE L'EMBALLAGE",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "3 rue Oued Souss",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Sale",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "573181279157866",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "16986408",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "2441.04",
+      "valeur_brute": "2 441,04",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_remise": {
+      "valeur": "101.71",
+      "valeur_brute": "101,71",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "488.21",
+      "valeur_brute": "488,21",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "2929.25",
+      "valeur_brute": "2 929,25",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Classeur a levier dos 75mm",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "16",
+          "valeur_brute": "16",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "25.75",
+          "valeur_brute": "25,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "412.00",
+          "valeur_brute": "412,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Cartouche d'encre noire",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "9",
+          "valeur_brute": "9",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "u",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "236.75",
+          "valeur_brute": "236,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "2130.75",
+          "valeur_brute": "2 130,75",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [],
+    "extra": {
+      "taux_affiche": "20"
+    }
+  }
+}

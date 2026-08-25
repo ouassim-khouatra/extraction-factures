@@ -1,0 +1,83 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0463",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-07-13",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-09-11",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "STE IMPRIMERIE DU SUD",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "8 bd Mohammed V",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Marrakech",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "665012573329351",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "57381532",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "OFFICE MODERNE SA",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "3142.00",
+      "valeur_brute": "3 142,00",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

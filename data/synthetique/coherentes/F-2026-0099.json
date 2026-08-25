@@ -1,0 +1,83 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0099",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-01-15",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-03-01",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "ATLAS FOURNITURES SARL",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "12 rue des Orangers",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Casablanca",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "275177144440579",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "53246714",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "OFFICE MODERNE SA",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "393.50",
+      "valeur_brute": "393,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "faute": null,
+  "gabarit": "remise",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0277",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-08-21",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-10-20",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "TECHNO DISTRIB SARL AU",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "Zone industrielle Gzenaya",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Tanger",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "940799713394742",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "15138168",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "3633.33",
+      "valeur_brute": "3 633,33",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_remise": {
+      "valeur": "231.92",
+      "valeur_brute": "231,92",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "254.33",
+      "valeur_brute": "254,33",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "3887.66",
+      "valeur_brute": "3 887,66",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "11",
+          "valeur_brute": "11",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "295.25",
+          "valeur_brute": "295,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "3247.75",
+          "valeur_brute": "3 247,75",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Enveloppes C5 (boite de 500)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "2",
+          "valeur_brute": "2",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "54.75",
+          "valeur_brute": "54,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "109.50",
+          "valeur_brute": "109,50",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 3,
+        "designation": {
+          "valeur": "Enveloppes C5 (boite de 500)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "16",
+          "valeur_brute": "16",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "31.75",
+          "valeur_brute": "31,75",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "508.00",
+          "valeur_brute": "508,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [],
+    "extra": {
+      "taux_affiche": "7"
+    }
+  }
+}

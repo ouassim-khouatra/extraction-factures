@@ -202,7 +202,11 @@ def rv_05(f: Facture) -> list[Anomalie]:
 
 
 def rv_06(f: Facture) -> list[Anomalie]:
-    """total HT + total TVA (+ port + timbre - remise) = total TTC."""
+    """total HT + total TVA (+ port + timbre) = total TTC.
+
+    Convention remise (a confirmer avec le comptable) : la remise globale
+    est deja imputee dans le total HT (RV-02) ; on ne la re-deduit pas ici.
+    """
     if not present(f.total_ht, f.total_tva, f.total_ttc):
         return []
 
@@ -215,7 +219,6 @@ def rv_06(f: Facture) -> list[Anomalie]:
     for champ, signe in (
         (f.total_port, 1),
         (f.timbre_fiscal, 1),
-        (f.total_remise, -1),
     ):
         if champ is not None and present(champ):
             assert champ.valeur is not None

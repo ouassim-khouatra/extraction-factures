@@ -1,0 +1,150 @@
+{
+  "faute": null,
+  "gabarit": "remise",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0059",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-02-02",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-04-03",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "ATLAS FOURNITURES SARL",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "12 rue des Orangers",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Casablanca",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "925184674840145",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "85000490",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "3331.05",
+      "valeur_brute": "3 331,05",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_remise": {
+      "valeur": "329.45",
+      "valeur_brute": "329,45",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "666.21",
+      "valeur_brute": "666,21",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "3997.26",
+      "valeur_brute": "3 997,26",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Enveloppes C5 (boite de 500)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "9",
+          "valeur_brute": "9",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "51",
+          "valeur_brute": "51,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "459.00",
+          "valeur_brute": "459,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Prestation de maintenance",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "19",
+          "valeur_brute": "19",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "h",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "168.5",
+          "valeur_brute": "168,50",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "3201.50",
+          "valeur_brute": "3 201,50",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [],
+    "extra": {
+      "taux_affiche": "20"
+    }
+  }
+}

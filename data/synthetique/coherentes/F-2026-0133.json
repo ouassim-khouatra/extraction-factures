@@ -1,0 +1,157 @@
+{
+  "faute": null,
+  "gabarit": "remise",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0133",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-05-12",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-06-26",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "COMPTOIR DE L'EMBALLAGE",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "3 rue Oued Souss",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Sale",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "584323088340994",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "11225756",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "ETABLISSEMENTS KARAM",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ht": {
+      "valeur": "767.81",
+      "valeur_brute": "767,81",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_remise": {
+      "valeur": "75.94",
+      "valeur_brute": "75,94",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_tva": {
+      "valeur": "153.56",
+      "valeur_brute": "153,56",
+      "source": "lu",
+      "lectures": {}
+    },
+    "total_ttc": {
+      "valeur": "921.37",
+      "valeur_brute": "921,37",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [
+      {
+        "numero_ligne": 1,
+        "designation": {
+          "valeur": "Stylos bille (boite de 50)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "7",
+          "valeur_brute": "7",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "86.25",
+          "valeur_brute": "86,25",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "603.75",
+          "valeur_brute": "603,75",
+          "source": "lu",
+          "lectures": {}
+        }
+      },
+      {
+        "numero_ligne": 2,
+        "designation": {
+          "valeur": "Enveloppes C5 (boite de 500)",
+          "source": "lu",
+          "lectures": {}
+        },
+        "quantite": {
+          "valeur": "8",
+          "valeur_brute": "8",
+          "source": "lu",
+          "lectures": {}
+        },
+        "unite": {
+          "valeur": "bte",
+          "source": "lu",
+          "lectures": {}
+        },
+        "prix_unitaire_ht": {
+          "valeur": "30",
+          "valeur_brute": "30,00",
+          "source": "lu",
+          "lectures": {}
+        },
+        "montant_ht": {
+          "valeur": "240.00",
+          "valeur_brute": "240,00",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "bandes_tva": [],
+    "extra": {
+      "taux_affiche": "20"
+    }
+  }
+}

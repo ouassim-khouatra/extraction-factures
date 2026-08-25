@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "pydantic>=2.13.4",
+    "pymupdf>=1.28.2",
+    "reportlab>=5.0.1",
 ]
 
 [project.scripts]

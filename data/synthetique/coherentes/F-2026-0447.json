@@ -1,0 +1,83 @@
+{
+  "faute": null,
+  "gabarit": "ttc_seule",
+  "facture": {
+    "type_document": {
+      "valeur": "facture",
+      "source": "lu",
+      "lectures": {}
+    },
+    "numero_facture": {
+      "valeur": "F-2026-0447",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_emission": {
+      "valeur": "2026-07-24",
+      "source": "lu",
+      "lectures": {}
+    },
+    "date_echeance": {
+      "valeur": "2026-08-23",
+      "source": "lu",
+      "lectures": {}
+    },
+    "devise": {
+      "valeur": "MAD",
+      "source": "lu",
+      "lectures": {}
+    },
+    "fournisseur": {
+      "nom": {
+        "valeur": "COMPTOIR DE L'EMBALLAGE",
+        "source": "lu",
+        "lectures": {}
+      },
+      "adresse": {
+        "valeur": "3 rue Oued Souss",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ville": {
+        "valeur": "Sale",
+        "source": "lu",
+        "lectures": {}
+      },
+      "ice": {
+        "valeur": "867343470611700",
+        "source": "lu",
+        "lectures": {}
+      },
+      "if": {
+        "valeur": "35895776",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "client": {
+      "nom": {
+        "valeur": "SOCIETE DEMO SARL",
+        "source": "lu",
+        "lectures": {}
+      }
+    },
+    "total_ttc": {
+      "valeur": "6019.50",
+      "valeur_brute": "6 019,50",
+      "source": "lu",
+      "lectures": {}
+    },
+    "lignes": [],
+    "bandes_tva": [
+      {
+        "taux": {
+          "valeur": "20",
+          "valeur_brute": "20%",
+          "source": "lu",
+          "lectures": {}
+        }
+      }
+    ],
+    "extra": {}
+  }
+}
