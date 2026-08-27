@@ -6,8 +6,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "openpyxl>=3.1.5",
+    "pillow>=12.3.0",
     "pydantic>=2.13.4",
     "pymupdf>=1.28.2",
+    "pytesseract>=0.3.13",
     "reportlab>=5.0.1",
     "sqlalchemy>=2.0.52",
     "streamlit>=1.62.0",

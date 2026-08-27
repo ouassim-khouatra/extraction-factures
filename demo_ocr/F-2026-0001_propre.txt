@@ -1,0 +1,16 @@
+FACTURE F-2026-0001
+
+MAROC NEGOCE SA Date d'emission : 21/07/2026
+45 avenue Hassan Il — Rabat Echeance : 20/08/2026
+ICE : 053050400481269 IF : 87457446 Devise : MAD
+Designation Qte PU HT Montant HT
+Papier A4 80g (ramette) i8u 39,25 706,50
+Enveloppes C5 (boite de 500) 5 bte 42,25 211,25
+Toner laser compatible i8u 849,00 15 282,00
+Total HT 15 551,76
+Remise 647,99
+Total TVA (20%) 3 110,35
+TOTAL TTC 18 662,11
+
+Merci de votre confiance.
+
